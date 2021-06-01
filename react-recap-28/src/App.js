@@ -6,6 +6,7 @@ import './App.css';
 import NavBar from './components/layouts/NavBar';
 import NotFound from './components/layouts/NotFound';
 import Login from './components/auth/Login';
+import Counter from './components/Counter';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           <Register />
         </Route>
 
+        <Route exact path="/counter">
+          <Counter />
+        </Route>
         <Route>
           <NotFound />
         </Route>
